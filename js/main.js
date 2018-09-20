@@ -16,9 +16,10 @@ function myFunction() {
         navbar.classList.add("sticky");
         //set z-index to hover other component
         navbar.style.zIndex = "1";
-        navbar.classList.add("border-bottom");
+        //Shadow
+        navbar.classList.add("shadow");
     } else {
         navbar.classList.remove("sticky");
-        navbar.classList.remove("border-bottom");
+        navbar.classList.remove("shadow");
     }
 }
