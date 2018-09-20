@@ -23,9 +23,7 @@ Auto deployment to Azure Webapp
 
 ## Authors
 
-//* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-//See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+Human-Computer Interaction Group 7 at Nong Lam University.
 
 ## License
 
