@@ -13,6 +13,7 @@ N/A
 ## Deployment
 
 Auto deployment to Azure Webapp
+URL: https://human-computer-group7.azurewebsites.net
 
 ## Built With
 
