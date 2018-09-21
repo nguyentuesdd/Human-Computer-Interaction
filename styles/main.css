@@ -18,3 +18,10 @@
 .sticky + .content {
     padding-top: 60px;
 }
+
+.center-cropped {
+    object-fit: cover; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    width: 100vw;
+    height: 42vw;
+}
