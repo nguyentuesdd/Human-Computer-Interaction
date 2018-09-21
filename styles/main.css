@@ -11,10 +11,6 @@
     width: 100%;
 }
 
-.content {
-    padding: 0px;
-}
-
 .sticky + .content {
     padding-top: 60px;
 }
