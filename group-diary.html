@@ -1,199 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Group Diary</title>
-    <link rel="icon"
+<meta charset="UTF-8">
+<title>Group Diary</title>
+<link rel="icon"
           href="ihttps://res.cloudinary.com/dtdk9ua19/image/upload/v1537435757/human-computer-interaction/common/logo.png"
           type="image/png" sizes="16x16">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
           integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
 <!--Header-->
 <div include-html="/header.html"></div>
 <!--Navbar-->
-<nav id="navbar" class="navbar navbar-expand-sm navbar-light bg-light border">
-    <a class="navbar-brand" href="/index.html"> <img
+<nav id="navbar" class="navbar navbar-expand-sm navbar-light bg-light border"> <a class="navbar-brand" href="/index.html"> <img
             src="https://res.cloudinary.com/dtdk9ua19/image/upload/v1537435757/human-computer-interaction/common/logo.png"
             width="30" height="30"
             class="d-inline-block align-top"
-            alt="">
-        Human-Computer Interaction
-    </a>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-            <li class="nav-item active"><a class="nav-link" href="/group-diary.html">Group Diary</a></li>
-            <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
-        </ul>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+            alt=""> Human-Computer Interaction </a>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+      <li class="nav-item active"><a class="nav-link" href="/group-diary.html">Group Diary</a></li>
+      <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+    </ul>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
             aria-controls="navbarToggleExternalContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+            aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 </nav>
-<!--End navbar-->
+<!--End navbar--> 
 
 <!--Content-->
 <div class="container content p-5">
-    <div class="row">
-        <div class="col-sm-12">
-            <ul class="nav nav-tabs container" role="tablist" id="tabs">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#week1">Week 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#week2">Week 2</a>
-                </li>
-            </ul>
-        </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <ul class="nav nav-tabs container" role="tablist" id="tabs">
+        <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#week1">Week 1</a> </li>
+        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#week2">Week 2</a> </li>
+      </ul>
     </div>
-    <div class="tab-content">
-        <div class="tab-pane container active" id="week1">
-            <div class="table-responsive">
-                <h1 class="title text-center">Group Diary Week 1</h1>
-                <table class="table table-striped table-bordered">
-                    <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">NO.</th>
-                        <th scope="col">Student ID</th>
-                        <th scope="col">Full Name</th>
-                        <th scope="col">Progress</th>
-                        <th scope="col">Results</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>14130047</td>
-                        <td>Nguyen Hoang Hung</td>
-                        <td>100%</td>
-                        <td>
-                            <ol>
-                                <li>
-                                    <a href="https://human-computer-group7.azurewebsites.net/index.html">Index page</a>
-                                </li>
-                                <li>
-                                    <a href="https://human-computer-group7.azurewebsites.net/group-diary.html">Group
-                                        Diary page</a>
-                                </li>
-                            </ol>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>14130373</td>
-                        <td>Do Nguyen Tu</td>
-                        <td>100%</td>
-                        <td>
-                            <ol>
-                                <li><a href="https://github.com/nguyentuesdd/Human-Computer-Interaction">GitHub
-                                    repository</a></li>
-                                <li><a href="https://human-computer-group7.azurewebsites.net">Azure
-                                    deployment</a>
-                                </li>
-                            </ol>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>15130050</td>
-                        <td>Nguyen Cong Hau</td>
-                        <td>100%</td>
-                        <td>
-                        <ol>
-                                <li><a href="groupdiary/week1.html">Create webapp Microsoft Azure</a></li>
-                                
-                            </ol>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>15130041</td>
-                        <td>Ta Thi My Duyen</td>
-                        <td>100%</td>
-                        <td>
-                        	<ol>
-                                <li><a href="groupdiary/week1.html">To learn about Microsoft Azure</a></li>
-                                
-                            </ol></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="tab-pane container" id="week2">
-            <div class="table-responsive">
-                <h1 class="title text-center">Group Diary Week 2</h1>
-                <table class="table table-striped table-bordered">
-                    <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">NO.</th>
-                        <th scope="col">Student ID</th>
-                        <th scope="col">Full Name</th>
-                        <th scope="col">Progress</th>
-                        <th scope="col">Results</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>14130047</td>
-                        <td>Nguyen Hoang Hung</td>
-                        <td>N/A</td>
-                        <td>N/A</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>14130373</td>
-                        <td>Do Nguyen Tu</td>
-                        <td>N/A</td>
-                        <td>N/A</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>N/A</td>
-                        <td>Nguyen Cong Hau</td>
-                        <td>N/A</td>
-                        <td>N/A</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>N/A</td>
-                        <td>Ta Thi My Duyen</td>
-                        <td>N/A</td>
-                        <td>N/A</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+  </div>
+  <div class="tab-content">
+    <div class="tab-pane container active" id="week1">
+      <div class="table-responsive">
+        <h1 class="title text-center">Group Diary Week 1</h1>
+        <table class="table table-bordered table-hover">
+          <thead class="thead-dark">
+            <tr class="text-center">
+              <th scope="col" style="width: 5%">NO.</th>
+              <th scope="col" style="width: 11%">Student ID</th>
+              <th scope="col" style="width: 18%">Full Name</th>
+              <th scope="col" style="width: 40%">Jobs</th>
+              <th scope="col" style="width: 7%">Progress</th>
+              <th scope="col" style="width: 19%">Results</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>14130047</td>
+              <td>Nguyen Hoang Hung</td>
+              <td>Job detail ...</td>
+              <td>100%</td>
+              <td><ol>
+                  <li> <a href="https://human-computer-group7.azurewebsites.net/index.html">Index page</a> </li>
+                  <li> <a href="https://human-computer-group7.azurewebsites.net/group-diary.html">Group
+                    Diary page</a> </li>
+                </ol></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>14130373</td>
+              <td>Do Nguyen Tu</td>
+              <td>Job detail ...</td>
+              <td>100%</td>
+              <td><ol>
+                  <li><a href="https://github.com/nguyentuesdd/Human-Computer-Interaction">GitHub
+                    repository</a></li>
+                  <li><a href="https://human-computer-group7.azurewebsites.net">Azure
+                    deployment</a> </li>
+                </ol></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>15130050</td>
+              <td>Nguyen Cong Hau</td>
+              <td>Job detail ...</td>
+              <td>100%</td>
+              <td><ol>
+                  <li><a href="groupdiary/week1.html">Create webapp Microsoft Azure</a></li>
+                </ol></td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>15130041</td>
+              <td>Ta Thi My Duyen</td>
+              <td>Job detail ...</td>
+              <td>100%</td>
+              <td><ol>
+                  <li><a href="groupdiary/week1.html">To learn about Microsoft Azure</a></li>
+                </ol></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-
+    <div class="tab-pane container" id="week2">
+      <div class="table-responsive">
+        <h1 class="title text-center">Group Diary Week 2</h1>
+        <table class="table table-bordered table-hover">
+          <thead class="thead-dark">
+            <tr class="text-center">
+              <th scope="col" style="width: 5%">NO.</th>
+              <th scope="col" style="width: 11%">Student ID</th>
+              <th scope="col" style="width: 18%">Full Name</th>
+              <th scope="col" style="width: 40%">Jobs</th>
+              <th scope="col" style="width: 7%">Progress</th>
+              <th scope="col" style="width: 19%">Results</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>14130047</td>
+              <td>Nguyen Hoang Hung</td>
+              <td>Job detail ...</td>
+              <td>N/A</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>14130373</td>
+              <td>Do Nguyen Tu</td>
+              <td>Job detail ...</td>
+              <td>N/A</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>15130050</td>
+              <td>Nguyen Cong Hau</td>
+              <td>Job detail ...</td>
+              <td>N/A</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>15130041</td>
+              <td>Ta Thi My Duyen</td>
+              <td>Job detail ...</td>
+              <td>N/A</td>
+              <td>N/A</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
-<!--End content-->
+<!--End content--> 
 
 <!--Footer-->
 <div include-html="/footer.html"></div>
 
-<!-- javascript -->
+<!-- javascript --> 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
-<script src="js/include.js"></script>
+        crossorigin="anonymous"></script> 
+<script src="js/main.js"></script> 
+<script src="js/include.js"></script> 
 <script>includeHTML();</script>
 </body>
 </html>
