@@ -54,9 +54,10 @@
 }
 
 .nav-item:hover {
-    background-color: lightgray;
+    background-color: #e8e8e8;
 }
 
 .active {
-    background-color: #00a6ff;
+    background-color: #4CAF50 !important;
+    color: white !important;
 }
