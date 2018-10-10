@@ -59,7 +59,6 @@
 
 .navbar-active {
     background-color: #4CAF50 !important;
-    color: white !important;
 }
 
 .navbar-brandname {
@@ -68,4 +67,8 @@
 
 .navbar-collapsebtn {
     margin: 5px;
+}
+
+.nav-link-active {
+    color: white !important;
 }
