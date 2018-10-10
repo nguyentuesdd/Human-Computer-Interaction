@@ -48,3 +48,15 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.nav-item {
+    padding: 8px;
+}
+
+.nav-item:hover {
+    background-color: lightgray;
+}
+
+.active {
+    background-color: #00a6ff;
+}
