@@ -49,15 +49,23 @@
     display: block;
 }
 
-.nav-item {
+.navbar-item {
     padding: 8px;
 }
 
-.nav-item:hover {
+.navbar-item:hover {
     background-color: #e8e8e8;
 }
 
-.active {
+.navbar-active {
     background-color: #4CAF50 !important;
     color: white !important;
+}
+
+.navbar-brandname {
+    padding: 6px;
+}
+
+.navbar-collapsebtn {
+    margin: 5px;
 }
