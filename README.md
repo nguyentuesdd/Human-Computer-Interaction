@@ -10,6 +10,11 @@ The website can run directly on browser.
 
 N/A
 
+### Requirement
+
+https://docs.google.com/document/d/10Uc8DW_2Xy8VKGTnHuUpGaWnKPoRpiUoG2Qc6tT9qZA/edit#heading=h.h0uv7leju0ng
+
+
 ## Deployment
 
 Auto deployment to Azure Webapp
