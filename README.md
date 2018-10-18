@@ -6,20 +6,15 @@
 
 The website can run directly on browser.
 
-### Prerequisites
 
-N/A
+### Document
 
-### Requirement
-
-https://docs.google.com/document/d/10Uc8DW_2Xy8VKGTnHuUpGaWnKPoRpiUoG2Qc6tT9qZA/edit#heading=h.h0uv7leju0ng
+[Google Docs](https://docs.google.com/document/d/10Uc8DW_2Xy8VKGTnHuUpGaWnKPoRpiUoG2Qc6tT9qZA/edit#heading=h.h0uv7leju0ng)
 
 
 ## Deployment
 
-Auto deployment to Azure Webapp
-* URL old: https://human-computer-group7.azurewebsites.net
-* URL new: https://hci2018group07.azurewebsites.net
+[Azure](https://hci2018group07.azurewebsites.net)
 
 ## Built With
 
