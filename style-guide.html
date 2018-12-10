@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
           integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
-<body>
+<body data-offset="100" data-spy="scroll" data-target="#navbar-scrollspy">
 <!--Header-->
 <div include-html="header.html"></div>
 <!--Navbar-->
@@ -61,41 +61,97 @@
 
     <div class="container row">
         <div class="col-4">
-            <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column">
+            <nav class="navbar navbar-light bg-light flex-column position-fixed" id="navbar-scrollspy">
                 <a class="navbar-brand" href="#">Style Guide</a>
                 <nav class="nav nav-pills flex-column">
-                    <a class="nav-link" href="#item-1">Item 1</a>
+                    <a class="nav-link" href="#img">Image</a>
                     <nav class="nav nav-pills flex-column">
-                        <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
-                        <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
+                        <a class="nav-link ml-3 my-1" href="#img-icon">Icon</a>
+                        <a class="nav-link ml-3 my-1" href="#img-banner">Banner</a>
+                        <a class="nav-link ml-3 my-1" href="#img-avatar">Avatar</a>
                     </nav>
-                    <a class="nav-link" href="#item-2">Item 2</a>
-                    <a class="nav-link" href="#item-3">Item 3</a>
+                    <a class="nav-link" href="#file-directory">File and Directory</a>
+                    <a class="nav-link" href="#nav">Navigation</a>
                     <nav class="nav nav-pills flex-column">
-                        <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
-                        <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
+                        <a class="nav-link ml-3 my-1" href="#nav-menu">Menu</a>
+                        <a class="nav-link ml-3 my-1" href="#nav-tab">Tab</a>
+                    </nav>
+                    <a class="nav-link" href="#html-css-js">HTML, CSS and Javascript</a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-3 my-1" href="#html-css-js-html">HTML</a>
+                        <a class="nav-link ml-3 my-1" href="#html-css-js-css">CSS</a>
+                        <a class="nav-link ml-3 my-1" href="#html-css-js-js">Javascript</a>
                     </nav>
                 </nav>
             </nav>
         </div>
 
         <div class="col-8">
-            <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-                <h4 id="item-1">Item 1</h4>
-                <p>...</p>
-                <h5 id="item-1-1">Item 1-1</h5>
-                <p>...</p>
-                <h5 id="item-1-2">Item 2-2</h5>
-                <p>...</p>
-                <h4 id="item-2">Item 2</h4>
-                <p>...</p>
-                <h4 id="item-3">Item 3</h4>
-                <p>...</p>
-                <h5 id="item-3-1">Item 3-1</h5>
-                <p>...</p>
-                <h5 id="item-3-2">Item 3-2</h5>
-                <p>...</p>
+            <div class="mb-5">
+                <h4 id="img"><u>Image</u></h4>
+                <h5 id="img-icon">Icon</h5>
+                <p>At least 128x128 pixel</p>
+                <p>Up to 512x512 pixel</p>
+                <h5 id="img-banner">Banner</h5>
+                <p>At least 960x640 pixel</p>
+                <h5 id="img-avatar">Avatar</h5>
+                <p>Between 512x512 pixel and 2048x2048 pixel</p>
             </div>
+
+            <div class="mb-5">
+                <h4 id="file-directory"><u>File and Directory</u></h4>
+                <p>HTML of main menu: /</p>
+                <p>Images: /images</p>
+                <p>Style sheets: /styles</p>
+                <p>Javascript: /js</p>
+                <p>Subfolder: /&lt;super folder&gt;/&lt;subfolder&gt;/</p>
+            </div>
+
+            <div class="mb-5">
+                <h4 id="nav"><u>Navigation</u></h4>
+                <h5 id="nav-menu">Menu</h5>
+                <p>Contain the main menu of the site</p>
+                <img alt=""
+                     class="img-fluid"
+                     src="https://res.cloudinary.com/dtdk9ua19/image/upload/v1543998391/human-computer-interaction/style-guide/nav-menu.png">
+                <h5 id="nav-tab">Tab</h5>
+                <p>Contain the sub menu of a page</p>
+                <p>Group diary</p>
+                <img alt=""
+                     class="img-fluid"
+                     src="https://res.cloudinary.com/dtdk9ua19/image/upload/v1543998608/human-computer-interaction/style-guide/nav-tab.png">
+            </div>
+
+
+            <div class="mb-5"></div>
+            <h4 id="html-css-js"><u>HTML, CSS and Javascript</u></h4>
+            <h5 id="html-css-js-html">HTML</h5>
+            <p>Naming rules</p>
+            <ol>
+                <li>Begin with alphabet character.</li>
+                <li>Use lower case</li>
+                <li>Seperate between words by '-' without quote.</li>
+            </ol>
+            <h5 id="html-css-js-css">CSS</h5>
+            <p>The site use <a href="https://getbootstrap.com/">Bootstrap 4</a> as the main css library.</p>
+            <p>Custom css in /styles/</p>
+            <p>CSS file rules</p>
+            <ol>
+                <li>Order: id, class</li>
+                <li>id, class name must use lower case and seperate between word by '-' without quote.</li>
+            </ol>
+            <h5 id="html-css-js-js">Javascript</h5>
+            <p>The site use <a href="https://getbootstrap.com/">Bootstrap 4</a> and <a
+                    href="https://jquery.com/">JQuery</a>
+                as the main js library.</p>
+            <p>Custom js in /js/</p>
+            <p>Javascript file rules</p>
+            <ol>
+                <li>JS file must use lower case and seperate between word by '-' without quote.</li>
+                <li>Function name must follow <a href="https://en.wikipedia.org/wiki/Camel_case">Camel case</a>
+                    rules
+                </li>
+            </ol>
         </div>
     </div>
 </div>
