@@ -12,8 +12,12 @@
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
           integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+          
+ <script src="https://kendo.cdn.telerik.com/2017.2.621/js/jquery.min.js"></script>
+ <script src="https://kendo.cdn.telerik.com/2017.2.621/js/jszip.min.js"></script>
+ <script src="https://kendo.cdn.telerik.com/2017.2.621/js/kendo.all.min.js"></script>
 </head>
-<body data-offset="100" data-spy="scroll" data-target="#navbar-scrollspy">
+<body id="content" data-offset="100" data-spy="scroll" data-target="#navbar-scrollspy">
 <!--Header-->
 <div include-html="header.html"></div>
 <!--Navbar-->
@@ -58,7 +62,7 @@
             <li class="breadcrumb-item active" aria-current="page">Style Guide</li>
         </ol>
         <ul class="float-right">
-        	<i class="fa fa-download text-primary" onClick="print();"> Download</i>
+        	<i class="fa fa-download text-primary" onClick="ExportPdf();"> Download</i>
         </ul>
     </nav>
 
@@ -262,11 +266,25 @@
 <div include-html="footer.html"></div>
 
 <!-- javascript -->
+<!-- Print html to pdf -->
 <script>
-	function myFunction(){
-		window.print() ;
-	}
+	function ExportPdf(){ 
+kendo.drawing
+.drawDOM("#content", 
+{ 
+paperSize: "A4",
+margin: { top: "1cm", bottom: "1cm" },
+scale: 0.8,
+height: 500
+})
+.then(function(group){
+kendo.drawing.pdf.saveAs(group, "style-guide.pdf")
+});
+}
 </script>
+<!-- <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script> -->
+<!-- End print html to pdf -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
