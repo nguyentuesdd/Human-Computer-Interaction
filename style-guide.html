@@ -64,6 +64,13 @@
             <nav class="navbar navbar-light bg-light flex-column position-fixed" id="navbar-scrollspy">
                 <a class="navbar-brand" href="#">Style Guide</a>
                 <nav class="nav nav-pills flex-column">
+                    <a class="nav-link" href="#layout">Layout</a>
+                    <a class="nav-link" href="#typography">Typography</a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-3 my-1" href="#typography-default">Default</a>
+                        <a class="nav-link ml-3 my-1" href="#typography-heading">Heading</a>
+                    </nav>
+                    <a class="nav-link" href="#color">Color</a>
                     <a class="nav-link" href="#img">Image</a>
                     <nav class="nav nav-pills flex-column">
                         <a class="nav-link ml-3 my-1" href="#img-icon">Icon</a>
@@ -71,6 +78,7 @@
                         <a class="nav-link ml-3 my-1" href="#img-avatar">Avatar</a>
                     </nav>
                     <a class="nav-link" href="#file-directory">File and Directory</a>
+                    <a class="nav-link" href="#branding">Branding</a>
                     <a class="nav-link" href="#nav">Navigation</a>
                     <nav class="nav nav-pills flex-column">
                         <a class="nav-link ml-3 my-1" href="#nav-menu">Menu</a>
@@ -85,8 +93,74 @@
                 </nav>
             </nav>
         </div>
-
         <div class="col-8">
+            <div class="mb-5">
+                <div id="layout">
+                    <h4><u>Layout</u></h4>
+                    <p><img alt="layout.png" class="img-fluid" src="images/group-diary/week-5/layout.png"/></p>
+                </div>
+            </div>
+            <div class="mb-5">
+                <div id="typography">
+                    <h4><u>Typography</u></h4>
+                </div>
+                <div id="typography-default">
+                    <h5>Default</h5>
+                    <ul>
+                        <li>Default font size (16px)</li>
+                        <li><a href="">a link (16px)</a></li>
+                        <li><p>p paragraph (16px)</p></li>
+                    </ul>
+                </div>
+                <div id="typography-heading">
+                    <h5>Heading</h5>
+                    <ul>
+                        <li><h1>h1 heading (40px)</h1></li>
+                        <li><h2>h2 heading (32px)</h2></li>
+                        <li><h3>h3 heading (28px)</h3></li>
+                        <li><h4>h4 heading (24px)</h4></li>
+                        <li><h5>h5 heading (20px)</h5></li>
+                        <li><h6>h6 heading (16px)</h6></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-5">
+                <div id="color">
+                    <h4><u>Color</u></h4>
+                    <div class="card-columns text-center">
+                        <div class="card">
+                            <div class="card-body" style="height:70px;"></div>
+                            <div class="card-footer">
+                                <p class="card-text">#000000</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body" style="height:70px; background-color:#cfcfcf"></div>
+                            <div class="card-footer">
+                                <p class="card-text">#cfcfcf</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body" style="height:70px; background-color:#f8f9fa"></div>
+                            <div class="card-footer">
+                                <p class="card-text">#f8f9fa</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body" style="height:70px; background-color:#007bff"></div>
+                            <div class="card-footer">
+                                <p class="card-text">#007bff</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body" style="height:70px; background-color:#e9ecef"></div>
+                            <div class="card-footer">
+                                <p class="card-text">#e9ecef</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="mb-5">
                 <h4 id="img"><u>Image</u></h4>
                 <h5 id="img-icon">Icon</h5>
@@ -97,7 +171,6 @@
                 <h5 id="img-avatar">Avatar</h5>
                 <p>Between 512x512 pixel and 2048x2048 pixel</p>
             </div>
-
             <div class="mb-5">
                 <h4 id="file-directory"><u>File and Directory</u></h4>
                 <p>HTML of main menu: /</p>
@@ -106,7 +179,29 @@
                 <p>Javascript: /js</p>
                 <p>Subfolder: /&lt;super folder&gt;/&lt;subfolder&gt;/</p>
             </div>
-
+            <div class="mb-5">
+                <div id="branding">
+                    <h4><u>Branding</u></h4>
+                    <img alt="logo.png" class="img-fluid" src="images/commons/logo.png"/>
+                    <ul>
+                        <li>
+                            <h6>Size: </h6>
+                            <p>At least 16x16 pixel</p>
+                            <p>Up to 30x30 pixel</p>
+                        </li>
+                        <li>
+                            <h6>Space: </h6>
+                            <p>There is a maximum of 2 spaces around the logo, one at the top of the logo and one at the
+                                bottom of the logo
+                            </p>
+                        </li>
+                        <li>
+                            <h6>Color: </h6>
+                            <p>Black and White</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="mb-5">
                 <h4 id="nav"><u>Navigation</u></h4>
                 <h5 id="nav-menu">Menu</h5>
@@ -121,37 +216,37 @@
                      class="img-fluid"
                      src="https://res.cloudinary.com/dtdk9ua19/image/upload/v1543998608/human-computer-interaction/style-guide/nav-tab.png">
             </div>
+            <div class="mb-5">
+                <h4 id="html-css-js"><u>HTML, CSS and Javascript</u></h4>
+                <h5 id="html-css-js-html">HTML</h5>
+                <p>Naming rules</p>
+                <ol>
+                    <li>Begin with alphabet character.</li>
+                    <li>Use lower case</li>
+                    <li>Seperate between words by '-' without quote.</li>
+                </ol>
+                <h5 id="html-css-js-css">CSS</h5>
+                <p>The site use <a href="https://getbootstrap.com/">Bootstrap 4</a> as the main css library.</p>
+                <p>Custom css in /styles/</p>
+                <p>CSS file rules</p>
+                <ol>
+                    <li>Order: id, class</li>
+                    <li>id, class name must use lower case and seperate between word by '-' without quote.</li>
+                </ol>
 
-
-            <div class="mb-5"></div>
-            <h4 id="html-css-js"><u>HTML, CSS and Javascript</u></h4>
-            <h5 id="html-css-js-html">HTML</h5>
-            <p>Naming rules</p>
-            <ol>
-                <li>Begin with alphabet character.</li>
-                <li>Use lower case</li>
-                <li>Seperate between words by '-' without quote.</li>
-            </ol>
-            <h5 id="html-css-js-css">CSS</h5>
-            <p>The site use <a href="https://getbootstrap.com/">Bootstrap 4</a> as the main css library.</p>
-            <p>Custom css in /styles/</p>
-            <p>CSS file rules</p>
-            <ol>
-                <li>Order: id, class</li>
-                <li>id, class name must use lower case and seperate between word by '-' without quote.</li>
-            </ol>
-            <h5 id="html-css-js-js">Javascript</h5>
-            <p>The site use <a href="https://getbootstrap.com/">Bootstrap 4</a> and <a
-                    href="https://jquery.com/">JQuery</a>
-                as the main js library.</p>
-            <p>Custom js in /js/</p>
-            <p>Javascript file rules</p>
-            <ol>
-                <li>JS file must use lower case and seperate between word by '-' without quote.</li>
-                <li>Function name must follow <a href="https://en.wikipedia.org/wiki/Camel_case">Camel case</a>
-                    rules
-                </li>
-            </ol>
+                <h5 id="html-css-js-js">Javascript</h5>
+                <p>The site use <a href="https://getbootstrap.com/">Bootstrap 4</a> and <a
+                        href="https://jquery.com/">JQuery</a>
+                    as the main js library.</p>
+                <p>Custom js in /js/</p>
+                <p>Javascript file rules</p>
+                <ol>
+                    <li>JS file must use lower case and seperate between word by '-' without quote.</li>
+                    <li>Function name must follow <a href="https://en.wikipedia.org/wiki/Camel_case">Camel case</a>
+                        rules
+                    </li>
+                </ol>
+            </div>
         </div>
     </div>
 </div>
