@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Style Guide</title>
+    <link rel="icon"
+          href="images/commons/logo.png"
+          type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+          
+ 
+</head>
+<body id="content" data-offset="100" data-spy="scroll" data-target="#navbar-scrollspy">
+<!--Header-->
+<div include-html="header.html"></div>
+<!--Navbar-->
+<nav id="navbar" class="navbar navbar-expand-sm navbar-light bg-white p-0">
+    <a class="navbar-brand navbar-brandname" href="index.html"> <img
+            src="images/commons/logo.png"
+            width="30" height="30"
+            class="d-inline-block align-top"
+            alt="">
+        Group 7
+    </a>
+    <button class="navbar-toggler navbar-collapsebtn" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item navbar-item"><a class="nav-link"
+                                                href="index.html">Home</a></li>
+            <li class="nav-item navbar-item">
+                <a class="nav-link" href="project.html">Project</a>
+            </li>
+            <li class="nav-item navbar-item">
+                <a class="nav-link" href="group-diary.html">Group Diary</a>
+            </li>
+            <li class="nav-item navbar-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item navbar-item navbar-active">
+                <a class="nav-link nav-link-active" href="style-guide.html">Style Guide</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--End navbar-->
+<div class="container-fluid">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-transparent">
+            <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Style Guide</li>
+        </ol>
+        <ul class="float-right">
+        	<i class="fa fa-download text-primary" onClick="ExportPdf();"> Download</i>
+        </ul>
+    </nav>
+
+    <div class="container row">
+        <div class="col-4">
+            <nav class="navbar navbar-light bg-light flex-column position-fixed" id="navbar-scrollspy">
+                <a class="navbar-brand" href="#">Style Guide</a>
+                <nav class="nav nav-pills flex-column">
+                    <a class="nav-link" href="#layout">Layout</a>
+                    <a class="nav-link" href="#typography">Typography</a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-3 my-1" href="#typography-default">Default</a>
+                        <a class="nav-link ml-3 my-1" href="#typography-heading">Heading</a>
+                    </nav>
+                    <a class="nav-link" href="#color">Color</a>
+                    <a class="nav-link" href="#img">Image</a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-3 my-1" href="#img-icon">Icon</a>
+                        <a class="nav-link ml-3 my-1" href="#img-banner">Banner</a>
+                        <a class="nav-link ml-3 my-1" href="#img-avatar">Avatar</a>
+                    </nav>
+                    <a class="nav-link" href="#file-directory">File and Directory</a>
+                    <a class="nav-link" href="#branding">Branding</a>
+                    <a class="nav-link" href="#nav">Navigation</a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-3 my-1" href="#nav-menu">Menu</a>
+                        <a class="nav-link ml-3 my-1" href="#nav-tab">Tab</a>
+                    </nav>
+                    <a class="nav-link" href="#html-css-js">HTML, CSS and Javascript</a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-3 my-1" href="#html-css-js-html">HTML</a>
+                        <a class="nav-link ml-3 my-1" href="#html-css-js-css">CSS</a>
+                        <a class="nav-link ml-3 my-1" href="#html-css-js-js">Javascript</a>
+                    </nav>
+                </nav>
+            </nav>
+        </div>
+        <div class="col-8">
+            <div class="mb-5">
+                <div id="layout">
+                    <h4><u>Layout</u></h4>
+                    <p><img alt="layout.png" class="img-fluid" src="images/group-diary/week-5/layout.png"/></p>
+                </div>
+            </div>
+            <div class="mb-5">
+                <div id="typography">
+                    <h4><u>Typography</u></h4>
+                </div>
+                <div id="typography-default">
+                    <h5>Default</h5>
+                    <ul>
+                        <li>Default font size (16px)</li>
+                        <li><a href="">a link (16px)</a></li>
+                        <li><p>p paragraph (16px)</p></li>
+                    </ul>
+                </div>
+                <div id="typography-heading">
+                    <h5>Heading</h5>
+                    <ul>
+                        <li><h1>h1 heading (40px)</h1></li>
+                        <li><h2>h2 heading (32px)</h2></li>
+                        <li><h3>h3 heading (28px)</h3></li>
+                        <li><h4>h4 heading (24px)</h4></li>
+                        <li><h5>h5 heading (20px)</h5></li>
+                        <li><h6>h6 heading (16px)</h6></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-5">
+                <div id="color">
+                    <h4><u>Color</u></h4>
+                    <div class="card-columns text-center">
+                        <div class="card">
+                            <div class="card-body" style="height:70px;"></div>
+                            <div class="card-footer">
+                                <p class="card-text">#000000</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body" style="height:70px; background-color:#cfcfcf"></div>
+                            <div class="card-footer">
+                                <p class="card-text">#cfcfcf</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body" style="height:70px; background-color:#f8f9fa"></div>
+                            <div class="card-footer">
+                                <p class="card-text">#f8f9fa</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body" style="height:70px; background-color:#007bff"></div>
+                            <div class="card-footer">
+                                <p class="card-text">#007bff</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body" style="height:70px; background-color:#e9ecef"></div>
+                            <div class="card-footer">
+                                <p class="card-text">#e9ecef</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-5">
+                <h4 id="img"><u>Image</u></h4>
+                <h5 id="img-icon">Icon</h5>
+                <p>At least 128x128 pixel</p>
+                <p>Up to 512x512 pixel</p>
+                <h5 id="img-banner">Banner</h5>
+                <p>At least 960x640 pixel</p>
+                <h5 id="img-avatar">Avatar</h5>
+                <p>Between 512x512 pixel and 2048x2048 pixel</p>
+            </div>
+            <div class="mb-5">
+                <h4 id="file-directory"><u>File and Directory</u></h4>
+                <p>HTML of main menu: /</p>
+                <p>Images: /images</p>
+                <p>Style sheets: /styles</p>
+                <p>Javascript: /js</p>
+                <p>Subfolder: /&lt;super folder&gt;/&lt;subfolder&gt;/</p>
+            </div>
+            <div class="mb-5">
+                <div id="branding">
+                    <h4><u>Branding</u></h4>
+                    <img alt="logo.png" class="img-fluid" src="images/commons/logo.png"/>
+                    <ul>
+                        <li>
+                            <h6>Size: </h6>
+                            <p>At least 16x16 pixel</p>
+                            <p>Up to 30x30 pixel</p>
+                        </li>
+                        <li>
+                            <h6>Space: </h6>
+                            <p>There are 2 spaces around the logo, one at the top of the logo and one at the
+                                bottom of the logo
+                            </p>
+                        </li>
+                        <li>
+                            <h6>Color: </h6>
+                            <p>Black and White</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-5">
+                <h4 id="nav"><u>Navigation</u></h4>
+                <h5 id="nav-menu">Menu</h5>
+                <p>Contain the main menu of the site</p>
+                <img alt=""
+                     class="img-fluid"
+                     src="https://res.cloudinary.com/dtdk9ua19/image/upload/v1543998391/human-computer-interaction/style-guide/nav-menu.png">
+                <h5 id="nav-tab">Tab</h5>
+                <p>Contain the sub menu of a page</p>
+                <p>Group diary</p>
+                <img alt=""
+                     class="img-fluid"
+                     src="https://res.cloudinary.com/dtdk9ua19/image/upload/v1543998608/human-computer-interaction/style-guide/nav-tab.png">
+            </div>
+            <div class="mb-5">
+                <h4 id="html-css-js"><u>HTML, CSS and Javascript</u></h4>
+                <h5 id="html-css-js-html">HTML</h5>
+                <p>Naming rules</p>
+                <ol>
+                    <li>Begin with alphabet character.</li>
+                    <li>Use lower case</li>
+                    <li>Seperate between words by '-' without quote.</li>
+                </ol>
+                <h5 id="html-css-js-css">CSS</h5>
+                <p>The site use <a href="https://getbootstrap.com/">Bootstrap 4</a> as the main css library.</p>
+                <p>Custom css in /styles/</p>
+                <p>CSS file rules</p>
+                <ol>
+                    <li>Order: id, class</li>
+                    <li>id, class name must use lower case and seperate between word by '-' without quote.</li>
+                </ol>
+
+                <h5 id="html-css-js-js">Javascript</h5>
+                <p>The site use <a href="https://getbootstrap.com/">Bootstrap 4</a> and <a
+                        href="https://jquery.com/">JQuery</a>
+                    as the main js library.</p>
+                <p>Custom js in /js/</p>
+                <p>Javascript file rules</p>
+                <ol>
+                    <li>JS file must use lower case and seperate between word by '-' without quote.</li>
+                    <li>Function name must follow <a href="https://en.wikipedia.org/wiki/Camel_case">Camel case</a>
+                        rules
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Content-->
+<div class="container">
+
+</div>
+
+<!--Footer-->
+<div include-html="footer.html"></div>
+
+<!-- javascript -->
+<!-- Print html to pdf -->
+<script>
+	function ExportPdf(){ 
+kendo.drawing
+.drawDOM("#content", 
+{ 
+paperSize: "A4",
+margin: { top: "1cm", bottom: "1cm" },
+scale: 0.8,
+height: 500
+})
+.then(function(group){
+kendo.drawing.pdf.saveAs(group, "style-guide.pdf")
+});
+}
+</script>
+<script src="https://kendo.cdn.telerik.com/2017.2.621/js/jquery.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2017.2.621/js/jszip.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2017.2.621/js/kendo.all.min.js"></script>
+<!-- End print html to pdf -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script src="js/include.js"></script>
+<script>includeHTML();</script>
+</body>
+</html>
