@@ -172,7 +172,7 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <th><a data-toggle="collapse" data-target="#login"><i class="fa fa-plus-circle"></i></a></th>
+                    <th><a data-toggle="collapse" data-target="#login"><i class="fa fa-plus-circle text-primary" onclick="changeicon(this);"></i></a></th>
                     <th scope="row">1</th>
                     <td>Login</td>
                     <td>Nguyen Hoang Hung</td>
@@ -187,7 +187,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <th><a data-toggle="collapse" data-target="#listcomputers"><i class="fa fa-plus-circle"></i></a>
+                    <th><a data-toggle="collapse" data-target="#listcomputers"><i class="fa fa-plus-circle text-primary" onclick="changeicon(this);"></i></a>
                     </th>
                     <th scope="row">2</th>
                     <td>List of computers</td>
@@ -206,7 +206,7 @@
                     </td>
                 </tr>
                  <tr>
-                    <th><a data-toggle="collapse" data-target="#register"><i class="fa fa-plus-circle"></i></a></th>
+                    <th><a data-toggle="collapse" data-target="#register"><i class="fa fa-plus-circle text-primary" onclick="changeicon(this);"></i></a></th>
                     <th scope="row">3</th>
                     <td>Register</td>
                     <td>Nguyen Cong Hau</td>
@@ -222,7 +222,7 @@
                        </td>
                 </tr>
                 <tr>
-                    <th><a data-toggle="collapse" data-target="#administrators"><i class="fa fa-plus-circle"></i></a>
+                    <th><a data-toggle="collapse" data-target="#administrators"><i class="fa fa-plus-circle text-primary" onclick="changeicon(this);"></i></a>
                     </th>
                     <th scope="row">4</th>
                     <td>Administrators</td>
@@ -244,7 +244,7 @@
                 
 
                 <tr>
-                    <th><a data-toggle="collapse" data-target="#promotions"><i class="fa fa-plus-circle"></i></a>
+                    <th><a data-toggle="collapse" data-target="#promotions"><i class="fa fa-plus-circle text-primary" onclick="changeicon(this);"></i></i></a>
                     </th>
                     <th scope="row">5</th>
                     <td>Promotions</td>
@@ -264,7 +264,7 @@
                 </tr>
 
                 <tr>
-                    <th><a data-target="#services" data-toggle="collapse"><i class="fa fa-plus-circle"></i></a>
+                    <th><a data-target="#services" data-toggle="collapse"><i class="fa fa-plus-circle text-primary" onclick="changeicon(this);"></i></a>
                     </th>
                     <th scope="row">6</th>
                     <td>Services</td>
@@ -376,5 +376,20 @@
 <script src="js/main.js"></script>
 <script src="js/include.js"></script>
 <script>includeHTML();</script>
+<script>
+function changeicon(x){
+	if (x.classList.contains("fa-plus-circle")) {
+		x.classList.remove("fa-plus-circle");
+		x.classList.remove("text-primary");
+		x.classList.add("fa-minus-circle");
+		x.classList.add("text-danger");
+	} else {
+		x.classList.remove("fa-minus-circle");
+		x.classList.remove("text-danger");
+		x.classList.add("fa-plus-circle");
+		x.classList.add("text-primary");
+	}					
+}
+</script>
 </body>
 </html>
