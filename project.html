@@ -357,7 +357,6 @@
         </div>
     </div>
 </div>
-
 <!--End content-->
 
 <!--Footer-->
@@ -377,14 +376,5 @@
 <script src="js/main.js"></script>
 <script src="js/include.js"></script>
 <script>includeHTML();</script>
-<script>
-$(document).ready(function(){
-	$('.collapse').on('shown.bs.collapse', function(){
-		$(this).parent().find(".fa-plus-circle").removeClass("fa-plus-circle").addClass("fa-minus-circle text-danger");
-	}).on('hidden.bs.collapse', function(){
-		$(this).parent().find(".fa-minus-circle text-danger").removeClass("fa-minus-circle text-danger").addClass("fa-plus-circle");
-	});
-});
-</script>
 </body>
 </html>
