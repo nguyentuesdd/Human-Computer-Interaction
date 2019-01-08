@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Group 7 - Results</title>
-    <link href="/images/commons/logo.png"
+    <link href="images/commons/logo.png"
           rel="icon"
           sizes="16x16" type="image/png">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="/styles/main.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" rel="stylesheet">
     <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -15,13 +15,13 @@
 </head>
 <body>
 <!--Header-->
-<div include-html="/header.html"></div>
+<div include-html="header.html"></div>
 <!--Navbar-->
 <nav class="navbar navbar-expand-sm navbar-light bg-white p-0" id="navbar">
-    <a class="navbar-brand navbar-brandname" href="/index.html"> <img
+    <a class="navbar-brand navbar-brandname" href="index.html"> <img
             alt=""
             class="d-inline-block align-top" height="30"
-            src="/images/commons/logo.png"
+            src="images/commons/logo.png"
             width="30">
         Group 7
     </a>
@@ -34,17 +34,17 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
             <li class="nav-item navbar-item"><a class="nav-link"
-                                                href="/index.html">Home</a></li>
-            <li class="nav-item navbar-item"><a class="nav-link" href="/project.html">Project</a></li>
+                                                href="index.html">Home</a></li>
+            <li class="nav-item navbar-item"><a class="nav-link" href="project.html">Project</a></li>
             <li class="nav-item navbar-item">
-                <a class="nav-link" href="/group-diary.html">Group Diary</a>
+                <a class="nav-link" href="group-diary.html">Group Diary</a>
             </li>
             <li class="nav-item navbar-item">
                 <a class="nav-link" href="style-guide.html">Style Guide</a>
             </li>
-            <li class="nav-item navbar-item navbar-active"><a class="nav-link nav-link-active" href="/results.html">Results</a>
+            <li class="nav-item navbar-item navbar-active"><a class="nav-link nav-link-active" href="results.html">Results</a>
             </li>
-            <li class="nav-item navbar-item"><a class="nav-link" href="/about.html">About</a></li>
+            <li class="nav-item navbar-item"><a class="nav-link" href="about.html">About</a></li>
         </ul>
     </div>
 </nav>
@@ -61,11 +61,160 @@
 
 <!--Content-->
 <div class="container">
+    <ul class="nav nav-pills mb-3 nav-fill" id="pills-tab" role="tablist">
+        <li class="nav-item">
+            <a aria-controls="pills-home" aria-selected="true" class="nav-link" data-toggle="pill" href="#pills-hung"
+               id="pills-hung-tab" role="tab">Hung</a>
+        </li>
+        <li class="nav-item">
+            <a aria-controls="pills-profile" aria-selected="false" class="nav-link" data-toggle="pill" href="#pills-tu"
+               id="pills-tu-tab" role="tab">Tu</a>
+        </li>
+        <li class="nav-item">
+            <a aria-controls="pills-contact" aria-selected="false" class="nav-link" data-toggle="pill" href="#pills-hau"
+               id="pills-hau-tab" role="tab">Hau</a>
+        </li>
+        <li class="nav-item">
+            <a aria-controls="pills-contact" aria-selected="false" class="nav-link" data-toggle="pill"
+               href="#pills-duyen" id="pills-duyen-tab" role="tab">Duyen</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div aria-labelledby="pills-profile-tab" class="tab-pane fade" id="pills-hung" role="tabpanel">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Job</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Assessment</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div aria-labelledby="pills-contact-tab" class="tab-pane fade" id="pills-tu" role="tabpanel">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Job</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Assessment</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div aria-labelledby="pills-contact-tab" class="tab-pane fade" id="pills-hau" role="tabpanel">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Job</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Assessment</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div aria-labelledby="pills-contact-tab" class="tab-pane fade" id="pills-duyen" role="tabpanel">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Job</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Assessment</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
 </div>
 <!--End content-->
 
 <!--Footer-->
-<div include-html="/footer.html"></div>
+<div include-html="footer.html"></div>
 
 <!-- javascript -->
 
